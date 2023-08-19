@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 50px 15%;
+}
+
+.play-button{
+    background-color: rgb(202, 145, 255);
+    border: 2px solid rgb(123, 107, 189);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px 24px;
+}
