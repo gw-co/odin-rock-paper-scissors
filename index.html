@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <script src="./script.js"></script>
     <h1>Rock Paper Scissors</h1>
-    <p>Play rock paper scissors game in browser console.</p>
-    <button class="play-button" onclick="play_button()">Play</button>
+    <div class="console-div">
+        <p>Play rock paper scissors game in browser console.</p>
+        <button class="play-button" onclick="play_button()">Play</button>
+    </div>
+    <div class="ui-div">
+        <h2>Or play with UI.</h2>
+        <p>Click a button of your choice to play a round.</p>
+        <div class="choice-buttons">
+            <button class="btn rock"     onclick="play_ui(0)">Rock</button>
+            <button class="btn paper"    onclick="play_ui(1)">Paper</button>
+            <button class="btn scissors" onclick="play_ui(2)">Scissors</button>
+        </div>
+        <div class="scores">
+            <div>Player:   <span class="score player-score">0</span></div>
+            <div class="win-lose">win/lose</div>
+            <div>Computer: <span class="score comp-score">0</span></div>
+        </div>
+        <div class="round-list"></div>
+    </div>
 </body>
 </html>
